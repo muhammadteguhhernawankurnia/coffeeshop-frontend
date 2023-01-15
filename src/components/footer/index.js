@@ -11,7 +11,7 @@ const Footer = () => {
                 src={require('../../assets/images/product-customer-images/coffee-logo.png')}
                 alt='coffeeshop-logo-footer'
               />
-              <h3>Coffe Shop</h3>
+              <h3>CoffeShop</h3>
             </div>
           </div>
           <div className='brand-definition'>

@@ -36,8 +36,8 @@ footer {
 }
 
 .logo-footer img {
-  height: 50px;
-  width: 50px;
+  height: 10px;
+  width: 10px;
 }
 
 .brand-definition {
@@ -69,19 +69,15 @@ footer {
 }
 
 .info-product .left-product {
-  /* margin-right: 70px; */
   width: 50%;
 }
 
 .info-engage {
-  /* background-color: salmon; */
-  /* width: 100%; */
   height: auto;
   display: flex;
   flex-direction: row;
 }
 
 .info-engage .left-engage {
-  /* margin-right: 24px; */
   width: 50%;
 }
