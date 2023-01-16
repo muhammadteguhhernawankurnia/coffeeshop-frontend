@@ -4,14 +4,17 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className='brand'>
-          <div className='brand-logo'>
-            <div className='logo'>
+        <div className='row'>
+          <div className='col-sm-4 mt-3 mb-3'>
+            <div class='col p-2 bg-light text-dark'>
               <img
+                alt=''
                 src={require('../../assets/images/product-customer-images/coffee-logo.png')}
-                alt='coffeeshop-logo-footer'
-              />
-              <h3>CoffeShop</h3>
+                width='30'
+                height='30'
+                className=''
+              />{' '}
+              <b>Coffee Shop</b>
             </div>
           </div>
           <div className='brand-definition'>
