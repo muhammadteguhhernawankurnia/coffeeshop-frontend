@@ -4,6 +4,9 @@ const Footer = () => {
   return (
     <>
       <footer>
+        <br />
+        <br />
+        <br />
         <div className='row'>
           <div className='col-sm-4 mt-3 mb-3'>
             <div class='col p-2 bg-light text-dark'>

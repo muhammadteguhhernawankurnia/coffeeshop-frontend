@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+}
+
+.content-2 {
+  position: absolute;
+  top: 450px;
+  left: 200px;
+  width: 75%;
+  height: 25vh;
+  border-radius: 10px;
+}
+
+.round-button {
+  border-radius: 50%;
+}
+
+.content-8 {
+  position: absolute;
+  top: 3740px;
+  left: 200px;
+  width: 75%;
+  height: 25vh;
+  border-radius: 10px;
+}
