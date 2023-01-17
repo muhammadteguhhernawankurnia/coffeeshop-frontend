@@ -1,20 +1,20 @@
-.first-card {
+.card-promo {
   background-color: #88b788;
   border-radius: 10px;
   margin: 20px 20px 20px 20px;
-  height: 100px;
+  height: 150px;
   width: 80%;
-  padding: 20px;
+  padding: 30px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.first-card img {
+.card-promo img {
   height: 60px;
   width: 60px;
 }
 
-.first-promo-text {
+.card-promo-text {
   font-size: 14px;
 }

@@ -5,22 +5,18 @@ const CardProduct = (props) => {
   console.log(props.data);
   return props.data.map((item) => {
     return (
-      <Card className='shadow-sm' style={{ width: '11rem' }}>
-        {/* <Card.Img
-        className='text-center img-card-product rounded-cirlce'
-        variant='top'
-        src={require('../../assets/images/product-customer-images/veggie-tomato-mix.jpg')}
-        alt='menu'
-      /> */}
+      <Card className='shadow-lg p-2 mt-4 mb-4 m-2' style={{ width: '11rem' }}>
         <Card.Img
-          className='text-center img-card-product rounded-cirlce'
+          className='text-center img-card-product picture-rounded-for-product'
           variant='top'
           src={item.img}
-          alt='menu'
+          alt='photo-products'
         />
         <Card.Body>
           <Card.Title className='text-center'>{item.title}</Card.Title>
-          <Card.Text className='text-center'>{item.title}</Card.Text>
+          <Card.Text className='text-center text-warning'>
+            IDR {item.price}
+          </Card.Text>
         </Card.Body>
       </Card>
     );

@@ -9,11 +9,11 @@ import axios from 'axios';
 const ProductMenu = () => {
   const [dataMenuProduct, setDataMenuProduct] = useState([]);
   useEffect(() => {
+    // console.log('awwokwokok');
     axios
-      // .get('http://api.alquran.cloud/v1/surah') //get nya masih belum bisa
-      .get('http://localhost:5000/api/v1/products') //get nya masih belum bisa
+      .get('http://localhost:5000/api/v1/products') //get udh bisa pake cors changer plugins
       .then((res) => setDataMenuProduct(res.data.data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err.mesagge));
   }, []);
   return (
     <>

@@ -52,7 +52,9 @@ const Header = () => {
                 Login
               </button>{' '}
               <button type='button' className='button btn-outline-warning'>
-                Sign Up
+                <Link className='link-dark text-decoration-none' to='/signup'>
+                  Sign Up
+                </Link>
               </button>
             </div>
           </div>
