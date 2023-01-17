@@ -1,0 +1,20 @@
+.first-card {
+  background-color: #88b788;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+  height: 100px;
+  width: 80%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.first-card img {
+  height: 60px;
+  width: 60px;
+}
+
+.first-promo-text {
+  font-size: 14px;
+}

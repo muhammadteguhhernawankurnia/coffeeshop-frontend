@@ -260,6 +260,9 @@ const HomePage = () => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
       {/* end content 8 */}
       <br />
       <br />

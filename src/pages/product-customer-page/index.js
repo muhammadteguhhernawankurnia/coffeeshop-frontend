@@ -1,9 +1,10 @@
 import '../../pages/product-customer-page/styles/product-customer-page.css';
-import HeaderWasLogin from '../../components/header-was-login/index';
+import Header from '../../components/header/index';
 import ProductCard from '../../pages/product-customer-page/product-card/index';
 import Footer from '../../components/footer/index';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import CardPromo from '../../components/card-promo';
 
 // const ProductCustomerPage = () => {
 //   useEffect(() => {
@@ -23,63 +24,17 @@ const ProductCustomerPage = () => {
   }, []);
   return (
     <>
-      <HeaderWasLogin />
+      <Header />
+      <br />
+      <br />
+      <br />
+      <br />
       <main>
         <section>
           <h2>Promo Today</h2>
           <p>Coupons will be updated every weeks.</p>
           <p>Check them out!</p>
-          <div className='first-card'>
-            <img
-              src={require('../../assets/images/product-customer-images/profile-1.png')}
-              alt='profile 1'
-            />
-            <div className='first-promo-text'>
-              <p>
-                <b>HAPPY MOTHER'S DAY!</b>
-              </p>
-              <p>Get one of our favorite menu for free!</p>
-            </div>
-          </div>
-          <div className='second-card'>
-            <img
-              src={require('../../assets/images/product-customer-images/profile-2.png')}
-              alt='profile 2'
-            />
-            <div className='second-promo-text'>
-              <p>
-                <b>Get a cup of coffee for free on sunday morning</b>
-              </p>
-              <p>Only at 7 to 9 AM</p>
-            </div>
-          </div>
-          <div className='third-card'>
-            <img
-              src={require('../../assets/images/product-customer-images/profile-1.png')}
-              alt='profile 1'
-            />
-            <div className='third-promo-text'>
-              <p>
-                <b>HAPPY MOTHER'S DAY!</b>
-              </p>
-              <p>Get one of our favorite menu for free!</p>
-            </div>
-          </div>
-          <div className='fourth-card'>
-            <img
-              src={require('../../assets/images/product-customer-images/profile-4.png')}
-              alt='profile 4'
-            />
-            <div className='fourth-promo-text'>
-              <p>
-                <b>HAPPY HALLOWEEN!</b>
-              </p>
-              <p>
-                Do you like chicken wings? Get 1 free only if you buy pinky
-                promise
-              </p>
-            </div>
-          </div>
+          <CardPromo />
           <button type='button' className='btn btn-apply-coupon'>
             Apply Coupon
           </button>

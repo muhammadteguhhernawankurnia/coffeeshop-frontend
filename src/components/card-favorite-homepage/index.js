@@ -6,7 +6,7 @@ import '../../components/card-favorite-homepage/styles/card-favorite-homepage.cs
 
 function CardFavoriteHomePage() {
   return (
-    <Card className='shadow-lg' style={{ width: '18rem' }}>
+    <Card className='shadow-lg' style={{ width: '14rem' }}>
       <Card.Img
         variant='top p-3 '
         src={require('../../assets/images/home-page-images/hazelnut latte.jpg')}
