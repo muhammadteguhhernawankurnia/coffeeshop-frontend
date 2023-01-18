@@ -53,7 +53,10 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <FontAwesomeIcon icon={faUser} /> 90+
+                    <button type='button' class='btn btn-warning'>
+                      <FontAwesomeIcon icon={faUser} />
+                    </button>
+                    {''} 90+
                   </h4>
                   <div>Staff</div>
                 </div>
@@ -61,7 +64,10 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <FontAwesomeIcon icon={faLocationPin} /> 30+
+                    <button type='button' class='btn btn-warning'>
+                      <FontAwesomeIcon icon={faLocationPin} />
+                    </button>
+                    {''} 30+
                   </h4>
                   <div>Store</div>
                 </div>
@@ -69,7 +75,10 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <FontAwesomeIcon icon={faHeart} /> 800+
+                    <button type='button' class='btn btn-warning'>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </button>
+                    {''} 800+
                   </h4>
                   <div>Customers</div>
                 </div>

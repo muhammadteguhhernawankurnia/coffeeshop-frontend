@@ -42,14 +42,16 @@ const Header = () => {
                     className='link-dark text-decoration-none'
                     to='/producttesting'
                   >
-                    Testing Catch
+                    History
                   </Link>
                 </div>
               </div>
             </div>
             <div className='col-sm-4 mt-3'>
               <button type='button' className='button btn-outline-warning'>
-                Login
+                <Link className='link-dark text-decoration-none' to='/login'>
+                  Login
+                </Link>
               </button>{' '}
               <button type='button' className='button btn-outline-warning'>
                 <Link className='link-dark text-decoration-none' to='/signup'>

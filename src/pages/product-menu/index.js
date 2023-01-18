@@ -49,7 +49,7 @@ const ProductMenu = () => {
             </div>
           </div>
           <div className='col-sm-9 p-5 bg-light text-dark'>
-            <h4>All Products</h4>
+            <h4>Coffee</h4>
             {/* <ListMenuTabs /> */}
             <div className='row p-5 m-2'>
               <CardProduct data={dataMenuProduct} />
