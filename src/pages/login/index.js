@@ -89,7 +89,11 @@ const Login = () => {
                 className='shadow-lg text-center rounded button-chocolate'
                 to='/signup'
               >
-                <Button variant='' size='lg' className='text-white'>
+                <Button
+                  variant=''
+                  size='lg'
+                  className='shadow-lg text-center rounded button-chocolate text-white'
+                >
                   <h5>
                     <b>Sign Up Here</b>
                   </h5>

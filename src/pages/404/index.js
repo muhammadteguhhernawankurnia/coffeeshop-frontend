@@ -1,12 +1,10 @@
-import Header from '../../components/header/index';
-import Footer from '../../components/footer/index';
+import MiniFooter from '../../components/mini-footer/index';
 import { Link } from 'react-router-dom';
+import '../../pages/404/styles/404.css';
 
 function NoMatch() {
   return (
     <div>
-      <Header />
-      <br />
       <div class='row row-cols-1'>
         <div class='col mr-0'>
           <img
@@ -16,13 +14,17 @@ function NoMatch() {
           />
         </div>
       </div>
-      <br />
-      <h2 className='d-flex justify-content-center'>Nothing to see here!</h2>
-      <p className='d-flex justify-content-center'>
-        <Link to='/'>Go to home page</Link>
-      </p>
-      <br />
-      <Footer />
+      <div className='page-404-main-content'>
+        <Link className='text-decoration-none text-dark' to='/'>
+          <h3 className='d-flex justify-content-center '>
+            Nothing to see here
+          </h3>
+          <p className='d-flex justify-content-center'>
+            <h4>Click me for go to home page!</h4>
+          </p>
+        </Link>
+      </div>
+      <MiniFooter />
     </div>
   );
 }
