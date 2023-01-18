@@ -5,6 +5,7 @@ import MiniFooter from '../../components/mini-footer';
 import '../../pages/login/styles/login.css';
 import axios from 'axios';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   useEffect(() => {
@@ -39,7 +40,7 @@ const Login = () => {
               <Form.Control
                 type='email'
                 placeholder='Enter your email adress'
-                id='username'
+                id='email'
               />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
@@ -49,9 +50,14 @@ const Login = () => {
                 placeholder='Enter your password'
                 id='password'
               />
-              <Form.Text className='text-decoration-underline'>
-                Forgot password?
-              </Form.Text>
+              <Link
+                className='link-dark text-decoration-none'
+                to='/forgotpassword'
+              >
+                <Form.Text className='text-decoration-underline'>
+                  Forgot password?
+                </Form.Text>
+              </Link>
             </Form.Group>
             <div className='d-grid gap-2'>
               <Button variant='' size='lg' className='shadow-lg button-yellow'>
@@ -71,18 +77,24 @@ const Login = () => {
                   <b>Login with Google</b>
                 </h5>
               </Button>
-              <Form.Text className='text-muted text-decoration-underline text-center'>
-                Don't have an account?
-              </Form.Text>
-              <Button
-                variant=''
-                size='lg'
-                className='shadow-lg button-chocolate'
+              <Link
+                className='link-dark text-decoration-none text-center'
+                to='/signup'
               >
-                <h5>
-                  <b>Sign Up Here</b>
-                </h5>
-              </Button>
+                <Form.Text className='text-decoration-underline '>
+                  Don't have an account?
+                </Form.Text>
+              </Link>
+              <Link
+                className='shadow-lg text-center rounded button-chocolate'
+                to='/signup'
+              >
+                <Button variant='' size='lg' className='text-white'>
+                  <h5>
+                    <b>Sign Up Here</b>
+                  </h5>
+                </Button>
+              </Link>
             </div>
           </form>
 

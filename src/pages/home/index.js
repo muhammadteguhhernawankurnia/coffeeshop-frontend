@@ -1,7 +1,6 @@
-// import HeaderNotLogin from '../../components/header-not-login/index';
-// import HeaderWasLogin from '../../components/header-was-login/index';
 import Header from '../../components/header/index';
 import Footer from '../../components/footer/index';
+// import MiniFooter from '../../components/mini-footer/index';
 import '../../pages/home/styles/home-page.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -21,9 +20,8 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <>
-      {/* <HeaderNotLogin /> */}
-      {/* <HeaderWasLogin /> */}
       <Header />
+      <br />
       <br />
       <br />
       <br />
@@ -282,6 +280,7 @@ const HomePage = () => {
       <br />
       <br />
       <Footer />
+      {/* <MiniFooter /> */}
     </>
   );
 };

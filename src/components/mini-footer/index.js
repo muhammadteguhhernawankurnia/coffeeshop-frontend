@@ -22,24 +22,30 @@ const MiniFooter = () => {
             </p>
           </div>
           <div className='brand-social'>
-            <img
-              src={require('../../assets/images/product-customer-images/fb.png')}
-              alt='fb'
-              width='60'
-              height='60'
-            />
-            <img
-              src={require('../../assets/images/product-customer-images/twitter.png')}
-              alt='twitter'
-              width='60'
-              height='60'
-            />
-            <img
-              src={require('../../assets/images/product-customer-images/ig.png')}
-              alt='ig'
-              width='60'
-              height='60'
-            />
+            <a href='https://id-id.facebook.com/'>
+              <img
+                src={require('../../assets/images/product-customer-images/fb.png')}
+                alt='fb'
+                width='60'
+                height='60'
+              />
+            </a>
+            <a href='https://twitter.com/i/flow/login'>
+              <img
+                src={require('../../assets/images/product-customer-images/twitter.png')}
+                alt='twitter'
+                width='60'
+                height='60'
+              />
+            </a>
+            <a href='https://www.instagram.com/?hl=id'>
+              <img
+                src={require('../../assets/images/product-customer-images/ig.png')}
+                alt='ig'
+                width='60'
+                height='60'
+              />
+            </a>
           </div>
         </div>
         <div className='brand-copyright'>
