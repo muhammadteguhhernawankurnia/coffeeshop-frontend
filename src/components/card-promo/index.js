@@ -5,14 +5,17 @@ const CardPromo = () => {
     <>
       <div className='card-promo'>
         <img
-          src={require('../../assets/images/product-customer-images/profile-1.png')}
+          src={require('../../assets/images/product-customer-images/promo.png')}
           alt='profile 1'
         />
         <div className='card-promo-text'>
           <p>
-            <b>HAPPY MOTHER'S DAY!</b>
+            <b>JUM'AT BERKAH!!!</b>
           </p>
-          <p>Get one of our favorite menu for free!</p>
+          <p>
+            Get one of our favorite menu for free after Jum'at Shalat at
+            Al-Jabar Mosque!
+          </p>
         </div>
       </div>
     </>

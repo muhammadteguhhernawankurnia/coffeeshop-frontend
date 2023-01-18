@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      <div className='container-fluid bg-white text-dark text-center fixed-top shadow-sm'>
+      <div className='container-fluid bg-white text-dark text-center fixed-top shadow-sm opacity-75'>
         <div className='container'>
           <div className='row'>
             <div className='col-sm-4 mt-3 mb-3'>
@@ -36,12 +36,16 @@ const Header = () => {
                     Product
                   </Link>
                 </div>
-                <div className='col p-2 bg-white text-dark'>Your Cart</div>
                 <div className='col p-2 bg-white text-dark'>
                   <Link
                     className='link-dark text-decoration-none'
-                    to='/producttesting'
+                    to='/payment'
                   >
+                    Your Cart
+                  </Link>
+                </div>
+                <div className='col p-2 bg-white text-dark'>
+                  <Link className='link-dark text-decoration-none' to='/404'>
                     History
                   </Link>
                 </div>

@@ -15,6 +15,8 @@ import {
 import CardFavoriteHomePage from '../../components/card-favorite-homepage';
 import CardCustomer from '../../components/card-customer';
 import Button from 'react-bootstrap/Button';
+import '../../pages/home/styles/home-page.css';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -40,9 +42,11 @@ const HomePage = () => {
             <h5>meals made by love just for you. Start your day with us</h5>
             <h5>for a bigger smile!</h5>
             <br />
-            <button type='button' class='btn button btn-warning btn-lg'>
-              Get Started
-            </button>
+            <Link className='link-dark text-decoration-none' to='/product'>
+              <button type='button' class='btn button btn-warning btn-lg'>
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         {/* end content 1 */}
@@ -53,7 +57,7 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <button type='button' class='btn btn-warning'>
+                    <button type='button' class='btn btn-warning round-button'>
                       <FontAwesomeIcon icon={faUser} />
                     </button>
                     {''} 90+
@@ -64,7 +68,7 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <button type='button' class='btn btn-warning'>
+                    <button type='button' class='btn btn-warning round-button'>
                       <FontAwesomeIcon icon={faLocationPin} />
                     </button>
                     {''} 30+
@@ -75,7 +79,7 @@ const HomePage = () => {
               <div className='col'>
                 <div class='text-dark'>
                   <h4>
-                    <button type='button' class='btn btn-warning'>
+                    <button type='button' class='btn btn-warning round-button'>
                       <FontAwesomeIcon icon={faHeart} />
                     </button>
                     {''} 800+
@@ -258,9 +262,11 @@ const HomePage = () => {
                 </div>
               </div>
               <div class='d-grid gap-2 col-3 mx-auto'>
-                <button class='btn button btn-warning btn-lg' type='button'>
-                  See Promo
-                </button>
+                <Link className='link-dark text-decoration-none' to='/product'>
+                  <button class='btn button btn-warning btn-lg' type='button'>
+                    See Promo
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

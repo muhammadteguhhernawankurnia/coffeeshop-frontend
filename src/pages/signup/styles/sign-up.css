@@ -1,0 +1,34 @@
+.button-yellow {
+  background: #ffba33;
+  color: #6a4029;
+}
+
+.button-yellow:hover {
+  background: #eea81d;
+  color: #6a4029;
+}
+
+.button-white {
+  background: #ffffff;
+  color: #000000;
+}
+
+.button-white:hover {
+  background: #f3efef;
+  color: #000000;
+}
+.button-chocolate {
+  background: #6a4029;
+  color: #ffffff;
+}
+
+.button-chocolate:hover {
+  background: #573320;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .login-background img {
+    display: none;
+  }
+}
