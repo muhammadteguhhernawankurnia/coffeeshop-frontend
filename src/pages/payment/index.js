@@ -1,55 +1,43 @@
-import Header from '../../components/header/index';
-import Footer from '../../components/footer/index';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+import MiniHeader from '../../components/mini-header';
+import MiniFooter from '../../components/mini-footer/index';
+import '../../pages/payment/styles/payment.css';
+import CardPayment1Checkout from '../../components/card-payment-1-checkout';
+import CardPayment2Adress from '../../components/card-payment-2-adress';
+import CardPayment3PaymentMethod from '../../components/card-payment-3-payment-method';
 
 const Payment = () => {
   return (
     <>
-      <Header />
-      <div class='row row-cols-1 bg-white'>
-        <div class='col'>
-          <img
-            src={require('../../assets/images/payment-images/payment-background.jpg')}
-            className='img-fluid'
-            alt='background-img'
-          />
+      <MiniHeader />
+      <div className='payment-background'>
+        <img
+          src={require('../../assets/images/payment-images/payment-background.jpg')}
+          className='img-fluid '
+          alt='background-img'
+        />
+      </div>
+      <div className='payment-content'>
+        <div className='text-white'>
+          <h2>Checkout your item now!</h2>
         </div>
-        <div className='container text-white top-left content-1 '>
-          <h2>Checkout your</h2>
-          <h2>Item now!</h2>
-          <br />
-          <Card style={{ width: '30rem' }}>
-            <Card.Title className='text-dark text-center p-5'>
-              Order Summary
-            </Card.Title>
-            <Card.Img variant='top' src='holder.js/100px180?text=Image cap' />
-            <Card.Img variant='top' src='holder.js/100px180?text=Image cap' />
-            <Card.Body>
-              <Card.Text>SUB TOTAL</Card.Text>
-            </Card.Body>
-            <ListGroup className='list-group-flush'>
-              <ListGroup.Item>
-                <h4>SUB TOTAL</h4>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <h4>TAX & FEES</h4>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <h4>SHIPPING</h4>
-              </ListGroup.Item>
-              <ListGroup.Item className='text-center'>
-                <h4>TOTAL</h4>
-              </ListGroup.Item>
-            </ListGroup>
-            <Card.Body>
-              {/* <Card.Link href='#'>Card Link</Card.Link>
-              <Card.Link href='#'>Another Link</Card.Link> */}
-            </Card.Body>
-          </Card>
+        <div className='d-flex flex-wrap align-content-center container'>
+          <div className='p-2 m-2 rounded'>
+            <CardPayment1Checkout />
+          </div>
+          <div className='text-white'></div>
+          <div className='p-2 m-2 rounded'>
+            <h2>Adress Details</h2>
+            <p className='text-white text-decoration-underline'>Edit</p>
+            <CardPayment2Adress />
+            <h2 className='mt-4'>Payment method</h2>
+            <CardPayment3PaymentMethod />
+            <button class='btn button-chocolate mt-4' type='button'>
+              <h5>Confirm and Pay</h5>
+            </button>
+          </div>
         </div>
       </div>
-      <Footer />
+      <MiniFooter />
     </>
   );
 };

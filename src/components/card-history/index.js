@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import '../../components/card-history/styles.css/card-history.css';
 import Form from 'react-bootstrap/Form';
 
-function TextExample() {
+function CardHistory() {
   return (
     <Card
       className='d-flex flex-wrap align-content-center round'
@@ -49,4 +49,4 @@ function TextExample() {
   );
 }
 
-export default TextExample;
+export default CardHistory;

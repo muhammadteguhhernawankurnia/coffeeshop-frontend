@@ -1,0 +1,12 @@
+.picture-rounded-for-payment {
+  background-color: white;
+  border-radius: 25%;
+  height: 110px;
+  width: 110px;
+}
+
+.img-card-payment {
+  border-radius: 25%;
+  height: 110px;
+  width: 110px;
+}
