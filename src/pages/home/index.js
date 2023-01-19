@@ -21,15 +21,11 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <br />
-      <br />
-      <br />
-      <br />
       {/* start content 1 */}
       <div class='row row-cols-1 bg-white'>
         <div class='col'>
           <img
-            src={require('../../assets/images/home-page-images/background.jpg')}
+            src={require('../../assets/images/home-page-images/background-original.jpg')}
             className='img-fluid'
             alt='background-img'
           />

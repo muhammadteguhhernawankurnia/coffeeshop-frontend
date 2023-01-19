@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import HomePage from './pages/home/index';
 import Product from './pages/product-menu/index';
 import Payment from './pages/payment';
+import History from './pages/history';
 import ProductTesting from './pages/product-customer-page/index';
 import SignUp from './pages/signup';
 import Login from './pages/login/index';
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='product' element={<Product />} />
         <Route path='payment' element={<Payment />} />
+        <Route path='history' element={<History />} />
         <Route path='producttesting' element={<ProductTesting />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='login' element={<Login />} />

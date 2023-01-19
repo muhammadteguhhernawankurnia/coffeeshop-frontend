@@ -1,0 +1,21 @@
+.pop-up-ads {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+@media (max-width: 768px) {
+  .pop-up-ads {
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 25px;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+}

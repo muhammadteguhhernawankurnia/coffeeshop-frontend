@@ -45,7 +45,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div className='col p-2 bg-white text-dark'>
-                  <Link className='link-dark text-decoration-none' to='/404'>
+                  <Link
+                    className='link-dark text-decoration-none'
+                    to='/history'
+                  >
                     History
                   </Link>
                 </div>

@@ -1,6 +1,7 @@
 import Header from '../../components/header';
 import CardPromo from '../../components/card-promo';
-import Footer from '../../components/footer';
+// import Footer from '../../components/footer';
+import MiniFooter from '../../components/mini-footer';
 // import ListMenuTabs from './list-menu-tabs';
 import CardProduct from '../../components/card-product';
 import { useEffect, useState } from 'react';
@@ -31,10 +32,13 @@ const ProductMenu = () => {
               </div>
               <div className='col-sm-12 p-1 bg-white text-dark text-center'>
                 <CardPromo />
+                <CardPromo />
+                <CardPromo />
+                <CardPromo />
               </div>
               <div class='d-grid gap-2 p-4 col-10 mx-auto'>
-                <button class='btn btn-warning' type='button'>
-                  Apply Coupon
+                <button class='btn button-yellow ' type='button'>
+                  <h5>Apply Coupon</h5>
                 </button>
               </div>
               <div className='col-sm-12 bg-white text-dark '>
@@ -57,7 +61,7 @@ const ProductMenu = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <MiniFooter />
     </>
   );
 };

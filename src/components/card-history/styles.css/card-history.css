@@ -1,0 +1,13 @@
+.picture-rounded-for-history {
+  background-color: white;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+}
+
+.img-card-history {
+  padding: 5px;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+}
