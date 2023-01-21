@@ -1,0 +1,40 @@
+/* .profile-background {
+} */
+
+.profile-background-white {
+  background-color: white;
+  height: 140vh;
+  width: 70%;
+  border-radius: 10px;
+  position: absolute;
+  top: 170px;
+  left: 200px;
+}
+.profile-content {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+  }
+
+  .profile-background img {
+    object-fit: cover;
+    height: 260vh;
+  }
+
+  .profile-background-white {
+    background-color: white;
+    /* height: 200vh; */
+    width: 95%;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+  }
+}

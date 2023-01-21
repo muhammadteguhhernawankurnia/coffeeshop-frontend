@@ -10,6 +10,7 @@ import SignUp from './pages/signup';
 import Login from './pages/login/index';
 import NoMatch from './pages/404/index';
 import ForgotPassword from './pages/forgot-password/index';
+import Profile from './pages/profile/index';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='signup' element={<SignUp />} />
         <Route path='login' element={<Login />} />
         <Route path='forgotpassword' element={<ForgotPassword />} />
+        <Route path='profile' element={<Profile />} />
         <Route path='*' element={<NoMatch />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,15 @@
+.form-profile {
+  width: 55%;
+  height: 120vh;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .form-profile {
+    width: 110%;
+    height: 90vh;
+    margin-top: 700px;
+    margin-left: -10px;
+  }
+}
