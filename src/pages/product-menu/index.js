@@ -1,4 +1,5 @@
-import Header from '../../components/header';
+// import Header from '../../components/header';
+import HeaderResponsive from '../../components/header-responsive';
 import CardPromo from '../../components/card-promo';
 // import Footer from '../../components/footer';
 import MiniFooter from '../../components/mini-footer';
@@ -6,6 +7,7 @@ import MiniFooter from '../../components/mini-footer';
 import CardProduct from '../../components/card-product';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+// import { Link } from 'react-router-dom';
 
 const ProductMenu = () => {
   const [dataMenuProduct, setDataMenuProduct] = useState([]);
@@ -18,11 +20,9 @@ const ProductMenu = () => {
   }, []);
   return (
     <>
-      <Header />
-      <br />
-      <br />
-      <br />
-      <div className='container-fluid mt-3'>
+      {/* <Header /> */}
+      <HeaderResponsive />
+      <div className='container-fluid mt-1'>
         <div className='row'>
           <div className='col-sm-3 bg-white text-white shadow-sm'>
             <div className='row'>

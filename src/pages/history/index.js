@@ -1,4 +1,5 @@
-import MiniHeader from '../../components/mini-header';
+// import MiniHeader from '../../components/mini-header';
+import HeaderResponsive from '../../components/header-responsive';
 import MiniFooter from '../../components/mini-footer';
 import '../history/styles/history.css';
 import CardHistory from '../../components/card-history';
@@ -6,7 +7,8 @@ import CardHistory from '../../components/card-history';
 const History = () => {
   return (
     <>
-      <MiniHeader />
+      {/* <MiniHeader /> */}
+      <HeaderResponsive />
       <div className='history-background'>
         <img
           src={require('../../assets/images/payment-images/payment-background.jpg')}

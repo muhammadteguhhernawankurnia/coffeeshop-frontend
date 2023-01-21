@@ -1,0 +1,23 @@
+.navbar-responsive {
+  width: 100%;
+}
+
+.header-content-2 {
+  margin-left: 320px;
+  width: 70%;
+}
+
+.header-content-3 {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .header-content-2 {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .header-content-3 {
+    width: 100%;
+  }
+}

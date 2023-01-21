@@ -1,4 +1,5 @@
-import MiniHeader from '../../components/mini-header';
+// import MiniHeader from '../../components/mini-header';
+import HeaderResponsive from '../../components/header-responsive';
 import MiniFooter from '../../components/mini-footer/index';
 import '../../pages/payment/styles/payment.css';
 import CardPayment1Checkout from '../../components/card-payment-1-checkout';
@@ -8,7 +9,8 @@ import CardPayment3PaymentMethod from '../../components/card-payment-3-payment-m
 const Payment = () => {
   return (
     <>
-      <MiniHeader />
+      {/* <MiniHeader /> */}
+      <HeaderResponsive />
       <div className='payment-background'>
         <img
           src={require('../../assets/images/payment-images/payment-background.jpg')}

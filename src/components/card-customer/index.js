@@ -4,7 +4,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function CardCustomer() {
   return (
-    <Card className='shadow-lg' style={{ width: '18rem' }}>
+    <Card className='shadow-lg mt-3' style={{ width: '23rem' }}>
       <Card.Body>
         <Card.Title>
           <div className='col'>

@@ -1,5 +1,6 @@
-import Header from '../../components/header/index';
+// import Header from '../../components/header/index';
 // import Footer from '../../components/footer/index';
+import HeaderResponsive from '../../components/header-responsive/index';
 import MiniFooter from '../../components/mini-footer/index';
 import '../../pages/home/styles/home-page.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,10 +21,11 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <HeaderResponsive />
       {/* start content 1 */}
-      <div class='row row-cols-1 bg-white'>
-        <div class='col'>
+      <div class='row row-cols-1 bg-white '>
+        <div class='col '>
           <img
             src={require('../../assets/images/home-page-images/background-original.jpg')}
             className='img-fluid'
@@ -86,7 +88,7 @@ const HomePage = () => {
         </div>
         {/* end content 3 */}
         {/* start content 3 */}
-        <div class='col p-5 bg-white content-3 mt-5'>
+        <div class='col p-5 bg-white content-3 mt-1'>
           <div class='row'>
             <div class='col bg-white justify-content-center'>
               <img
@@ -94,7 +96,7 @@ const HomePage = () => {
                 src={require('../../assets/images/home-page-images/team work.jpg')}
                 width='500'
                 height='370'
-                className='rounded'
+                className='rounded content-3-img'
               />
             </div>
             <div class='col bg-white'>
@@ -190,7 +192,7 @@ const HomePage = () => {
         </div>
         {/* end content 6 */}
         {/* start content 7 */}
-        <div className='col p-4 bg-white'>
+        <div className='col p-4 bg-white '>
           <div className='row'>
             <div className='col-sm-12 p-1 bg-white text-dark text-center'>
               <h3>Loved by Thousands of</h3>
@@ -213,25 +215,22 @@ const HomePage = () => {
                 <div class='col'>
                   <CardCustomer />
                 </div>
-                <div class='col'>
-                  <CardCustomer />
-                </div>
               </div>
             </div>
             <br />
             <div>
               <br />
               <Button
-                className='round-button '
-                variant='outline-warning'
+                className='round-button button-chocolate'
+                variant=''
                 size='lg'
               >
                 <FontAwesomeIcon icon={faArrowLeft} />
               </Button>
               {'    '}
               <Button
-                className='round-button'
-                variant='outline-warning'
+                className='round-button button-chocolate'
+                variant=''
                 size='lg'
               >
                 <FontAwesomeIcon icon={faArrowRight} />
@@ -246,7 +245,7 @@ const HomePage = () => {
         <br />
         {/* end content 7 */}
         {/* start content 8 */}
-        <div className='col p-5 bg-white shadow-lg content-8'>
+        <div className='col p-5 mt-5 bg-white shadow-lg content-8'>
           <div class='container'>
             <div class='row '>
               <div className='col'>
