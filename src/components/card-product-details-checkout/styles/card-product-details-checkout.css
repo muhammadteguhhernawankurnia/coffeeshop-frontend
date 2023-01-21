@@ -1,0 +1,35 @@
+.card-checkout {
+  width: 800px;
+  height: 130px;
+}
+
+.button-plus-minus {
+  background-color: #e7aa3685;
+  color: #6a4029;
+}
+
+.button-checkout {
+  height: 40px;
+  width: 150px;
+  background-color: #e7aa3685;
+  color: #6a4029;
+  border-radius: 5px;
+}
+
+.button-checkout:hover {
+  height: 40px;
+  width: 150px;
+  background-color: #e7a11f85;
+  color: #6a4029;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .card-checkout {
+    position: absolute;
+    top: 1150px;
+    left: 0px;
+    width: 390px;
+    height: 250px;
+  }
+}

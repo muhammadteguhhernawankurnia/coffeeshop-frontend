@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const MiniFooter = () => {
   return (
-    <div className='container-fluid mt-3 mini-footer'>
+    <div className='container-fluid mt-5 mini-footer'>
       <div className='row'>
         <div className='col-12 p-2 bg-white text-dark'>
           <Link className='link-dark text-decoration-none' to='/'>

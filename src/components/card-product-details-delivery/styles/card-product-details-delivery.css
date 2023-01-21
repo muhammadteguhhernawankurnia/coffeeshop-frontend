@@ -1,0 +1,81 @@
+.product-details-content {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+}
+
+.picture-rounded-for-product-details {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+}
+
+.product-details-main-img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .product-details-content {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+  }
+
+  .payment-background img {
+    object-fit: cover;
+    height: 200vh;
+  }
+}
+
+.button-yellow-rounded {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffba33;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+}
+
+.button-yellow-rounded:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f8b328;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.button-chocolate-rounded {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #6a4029;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+}
+
+.button-chocolate-rounded:hover {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #704026;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 64px -30px rgba(0, 0, 0, 0.75);
+}

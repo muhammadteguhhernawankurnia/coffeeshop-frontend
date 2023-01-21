@@ -1,12 +1,32 @@
-.picture-rounded-for-payment {
-  background-color: white;
-  border-radius: 25%;
-  height: 110px;
-  width: 110px;
+.product-details-content {
+  position: absolute;
+  top: 120px;
+  left: 200px;
 }
 
-.img-card-payment {
-  border-radius: 25%;
-  height: 110px;
-  width: 110px;
+.picture-rounded-for-product-details {
+  background-color: whitesmoke;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+}
+
+.product-details-main-img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .product-details-content {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+  }
+
+  .payment-background img {
+    object-fit: cover;
+    height: 200vh;
+  }
 }

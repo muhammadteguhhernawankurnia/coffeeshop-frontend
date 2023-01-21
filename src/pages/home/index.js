@@ -1,6 +1,6 @@
 import Header from '../../components/header/index';
-import Footer from '../../components/footer/index';
-// import MiniFooter from '../../components/mini-footer/index';
+// import Footer from '../../components/footer/index';
+import MiniFooter from '../../components/mini-footer/index';
 import '../../pages/home/styles/home-page.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -275,8 +275,8 @@ const HomePage = () => {
       {/* end content 8 */}
       <br />
       <br />
-      <Footer />
-      {/* <MiniFooter /> */}
+      {/* <Footer /> */}
+      <MiniFooter />
     </>
   );
 };
