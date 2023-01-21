@@ -1,4 +1,3 @@
-// import MiniHeader from '../../components/mini-header';
 import HeaderResponsive from '../../components/header-responsive';
 import MiniFooter from '../../components/mini-footer/index';
 import '../../pages/payment/styles/payment.css';

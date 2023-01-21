@@ -8,9 +8,10 @@ import History from './pages/history';
 import ProductTesting from './pages/product-customer-page/index';
 import SignUp from './pages/signup';
 import Login from './pages/login/index';
-import NoMatch from './pages/404/index';
 import ForgotPassword from './pages/forgot-password/index';
 import Profile from './pages/profile/index';
+import Chat from './pages/chat/index';
+import NoMatch from './pages/404/index';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='login' element={<Login />} />
         <Route path='forgotpassword' element={<ForgotPassword />} />
         <Route path='profile' element={<Profile />} />
+        <Route path='chat' element={<Chat />} />
         <Route path='*' element={<NoMatch />} />
       </Routes>
     </BrowserRouter>
