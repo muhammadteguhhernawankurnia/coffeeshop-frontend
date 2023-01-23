@@ -4,21 +4,44 @@ import MiniHeader from '../../components/mini-header';
 import MiniFooter from '../../components/mini-footer';
 import '../../pages/login/styles/login.css';
 import axios from 'axios';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Alert from 'react-bootstrap/Alert';
 
 const Login = () => {
-  useEffect(() => {
-    axios
-      .get('http://localhost:5000/api/v1/auth/login')
-      .then((result) => {
-        console.log('data API', result.data);
-      })
-      .catch((error) => {
-        console.log('error: ', error.response);
-      });
-  }, []);
+  const [LoginForm, setLoginForm] = useState({
+    username: '',
+    password: '',
+  });
 
+  const [validate, setValidate] = useState({ error: false, message: '' });
+  //hooks
+  const navigate = useNavigate();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    // alert('awkwokowko');
+    axios({
+      url: 'http://localhost:5000/api/v1/auth/login',
+      method: 'POST',
+      data: LoginForm,
+    })
+      .then((res) => {
+        console.log(res.data.data);
+        localStorage.setItem('@userLogin', JSON.stringify(res.data.data));
+        navigate('/product');
+      })
+      .catch((err) => {
+        // console.log(err.response.data.message);
+        setValidate({ error: true, message: err.response.data.message });
+      });
+  };
+  //private route ketika user sudah login gak bisa balik ke form login
+  useEffect(() => {
+    if (localStorage.getItem('@userLogin')) {
+      navigate('/product');
+    }
+  }, []);
   return (
     <div className='container p-1 bg-white rounded shadow-lg'>
       <div className='row'>
@@ -34,11 +57,24 @@ const Login = () => {
             <MiniHeader />
           </div>
           <br />
-          <form>
+          {validate.error && (
+            <Alert variant='success'>
+              <Alert.Heading>Hey, nice to see you</Alert.Heading>
+              <hr />
+              <p className='mb-0'>{validate.message}</p>
+            </Alert>
+          )}
+          <form onSubmit={handleLogin} className=''>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Email address:</Form.Label>
               <Form.Control
-                type='email'
+                onChange={(e) =>
+                  setLoginForm({
+                    ...LoginForm,
+                    username: e.target.value,
+                  })
+                }
+                type='text'
                 placeholder='Enter your email adress'
                 id='email'
               />
@@ -46,7 +82,13 @@ const Login = () => {
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Password:</Form.Label>
               <Form.Control
-                type='email'
+                onChange={(e) =>
+                  setLoginForm({
+                    ...LoginForm,
+                    password: e.target.value,
+                  })
+                }
+                type='password'
                 placeholder='Enter your password'
                 id='password'
               />
@@ -60,7 +102,12 @@ const Login = () => {
               </Link>
             </Form.Group>
             <div className='d-grid gap-2'>
-              <Button variant='' size='lg' className='shadow-lg button-yellow'>
+              <Button
+                type='submit'
+                variant=''
+                size='lg'
+                className='shadow-lg button-yellow'
+              >
                 <h5>
                   <b>Login</b>
                 </h5>
@@ -79,7 +126,7 @@ const Login = () => {
               </Button>
               <Link
                 className='link-dark text-decoration-none text-center'
-                to='/signup'
+                to='/auth/signup'
               >
                 <Form.Text className='text-decoration-underline '>
                   Don't have an account?
@@ -87,7 +134,7 @@ const Login = () => {
               </Link>
               <Link
                 className='shadow-lg text-center rounded button-chocolate'
-                to='/signup'
+                to='/auth/signup'
               >
                 <Button
                   variant=''

@@ -8,7 +8,7 @@ const History = () => {
   return (
     <>
       {/* <MiniHeader /> */}
-      <HeaderResponsive />
+      <HeaderResponsive title='History' />
       <div className='history-background'>
         <img
           src={require('../../assets/images/payment-images/payment-background.jpg')}

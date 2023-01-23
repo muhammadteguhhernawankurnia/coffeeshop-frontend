@@ -87,7 +87,7 @@ const Login = () => {
               </Button>
               <Link
                 className='link-dark text-decoration-none text-center'
-                to='/login'
+                to='/auth/login'
               >
                 <Form.Text className='text-muted text-decoration-underline text-center'>
                   Already have an account?
@@ -95,7 +95,7 @@ const Login = () => {
               </Link>
               <Link
                 className='shadow-lg text-center rounded button-chocolate'
-                to='/login'
+                to='/auth/login'
               >
                 <Button variant='' size='lg' className='text-white'>
                   <h5>

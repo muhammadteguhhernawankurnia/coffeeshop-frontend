@@ -13,6 +13,24 @@ import Profile from './pages/profile/index';
 import Chat from './pages/chat/index';
 import NoMatch from './pages/404/index';
 
+const PrivateRoute = ({ path, element }) => {
+  const navigate = useNavigate();
+  if (!localStorage.getItem('@userLogin')) {
+    navigate('/auth/login');
+  }
+  return <Route path={path} element={element} />;
+};
+
+const PublicRoute = ({ path, element, restrict }) => {
+  const navigate = useNavigate();
+  if (restrict) {
+    if (localStorage.getItem('@userLogin')) {
+      navigate('/');
+    }
+  }
+  return <Route path={path} element={element} />;
+};
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -29,6 +47,13 @@ const App = () => {
         <Route path='profile' element={<Profile />} />
         <Route path='chat' element={<Chat />} />
         <Route path='*' element={<NoMatch />} />
+
+        <PublicRoute path='/' element={<HomePage />} />
+        <PublicRoute path='/product' element={<Product />} />
+        <PublicRoute restrict={true} path='auth/login' element={<Login />} />
+
+        <PrivateRoute path='payment' element={<Payment />} />
+        <PrivateRoute path='history' element={<History />} />
       </Routes>
     </BrowserRouter>
   );

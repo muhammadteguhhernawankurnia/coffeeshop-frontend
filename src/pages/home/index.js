@@ -22,7 +22,8 @@ const HomePage = () => {
   return (
     <>
       {/* <Header /> */}
-      <HeaderResponsive />
+      <HeaderResponsive title='Home' headerShown={false} />
+      {/* add props headers */}
       {/* start content 1 */}
       <div class='row row-cols-1 bg-white '>
         <div class='col '>

@@ -9,7 +9,7 @@ const Payment = () => {
   return (
     <>
       {/* <MiniHeader /> */}
-      <HeaderResponsive />
+      <HeaderResponsive title='Payment' />
       <div className='payment-background'>
         <img
           src={require('../../assets/images/payment-images/payment-background.jpg')}

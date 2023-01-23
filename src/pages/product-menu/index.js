@@ -21,7 +21,7 @@ const ProductMenu = () => {
   return (
     <>
       {/* <Header /> */}
-      <HeaderResponsive />
+      <HeaderResponsive title='Products' />
       <div className='container-fluid mt-1'>
         <div className='row'>
           <div className='col-sm-3 bg-white text-white shadow-sm'>
