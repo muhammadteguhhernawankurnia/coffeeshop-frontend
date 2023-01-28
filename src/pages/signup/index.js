@@ -4,19 +4,42 @@ import MiniHeaderSignUp from '../../components/mini-header-signup';
 import MiniFooter from '../../components/mini-footer';
 import '../../pages/signup/styles/sign-up.css';
 import axios from 'axios';
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Login = () => {
-  useEffect(() => {
-    axios
-      .get('http://localhost:5000/api/v1/auth/login')
-      .then((result) => {
-        console.log('data API', result.data);
+const SignUp = () => {
+  const [SignUpForm, setSignUpForm] = useState({
+    username: '',
+    password: '',
+  });
+
+  const [validate, setValidate] = useState({ error: false, message: '' });
+  //hooks
+  const navigate = useNavigate();
+
+  const handleSignUp = (event) => {
+    event.preventDefault();
+    // alert('awkwokowko');
+    axios({
+      url: 'http://localhost:5000/api/v1/auth/register',
+      method: 'POST',
+      data: SignUpForm,
+    })
+      .then((res) => {
+        console.log(res.data.data);
+        localStorage.setItem('@userSignUp', JSON.stringify(res.data.data));
+        navigate('/auth/login');
       })
-      .catch((error) => {
-        console.log('error: ', error.response);
+      .catch((err) => {
+        // console.log(err.response.data.message);
+        setValidate({ error: true, message: err.response.data.message });
       });
+  };
+  //private route ketika user sudah login gak bisa balik ke form login
+  useEffect(() => {
+    if (localStorage.getItem('@userSignUp')) {
+      // navigate('/auth/login');
+    }
   }, []);
 
   return (
@@ -34,19 +57,31 @@ const Login = () => {
             <MiniHeaderSignUp />
           </div>
           <br />
-          <form>
+          <form onSubmit={handleSignUp} className=''>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Email address:</Form.Label>
               <Form.Control
-                type='email'
+                onChange={(e) =>
+                  setSignUpForm({
+                    ...SignUpForm,
+                    username: e.target.value,
+                  })
+                }
+                type='text'
                 placeholder='Enter your email adress'
-                id='username'
+                id='email'
               />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Password:</Form.Label>
               <Form.Control
-                type='email'
+                onChange={(e) =>
+                  setSignUpForm({
+                    ...SignUpForm,
+                    password: e.target.value,
+                  })
+                }
+                type='password'
                 placeholder='Enter your password'
                 id='password'
               />
@@ -54,7 +89,7 @@ const Login = () => {
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Phone Number:</Form.Label>
               <Form.Control
-                type='email'
+                type='number'
                 placeholder='Enter your phone number'
                 id='password'
               />
@@ -68,7 +103,12 @@ const Login = () => {
               </Link>
             </Form.Group>
             <div className='d-grid gap-2'>
-              <Button variant='' size='lg' className='shadow-lg button-yellow'>
+              <Button
+                type='submit'
+                variant=''
+                size='lg'
+                className='shadow-lg button-yellow'
+              >
                 <h5>
                   <b>Sign Up</b>
                 </h5>
@@ -113,4 +153,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
