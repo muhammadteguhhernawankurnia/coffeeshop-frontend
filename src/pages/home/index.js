@@ -25,11 +25,11 @@ const HomePage = () => {
       <HeaderResponsive title='Home' headerShown={false} />
       {/* add props headers */}
       {/* start content 1 */}
-      <div class='row row-cols-1 bg-white '>
+      <div class='row row-cols-1 bg-white w-100'>
         <div class='col '>
           <img
             src={require('../../assets/images/home-page-images/background-original.jpg')}
-            className='img-fluid'
+            className='m-1 mw-100 rounded img-fluid'
             alt='background-img'
           />
           <div className='container text-white top-left content-1'>
@@ -89,7 +89,7 @@ const HomePage = () => {
         </div>
         {/* end content 3 */}
         {/* start content 3 */}
-        <div class='col p-5 bg-white content-3 mt-1'>
+        <div class='col p-5 bg-white content-3 mt-4'>
           <div class='row'>
             <div class='col bg-white justify-content-center'>
               <img

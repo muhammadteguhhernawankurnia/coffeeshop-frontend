@@ -1,8 +1,11 @@
 import '../../components/card-promo/styles/card-promo.css';
+// import { Link } from 'react-router-dom';
 
 const CardPromo = () => {
   return (
     <>
+      {/* <Link className='link-dark text-decoration-none' to='/products:id'> */}
+      {/* <Link className='link-dark text-decoration-none' to='/productdetails'> */}
       <div className='card-promo'>
         <img
           src={require('../../assets/images/product-customer-images/promo.png')}
@@ -18,6 +21,7 @@ const CardPromo = () => {
           </p>
         </div>
       </div>
+      {/* </Link> */}
     </>
   );
 };

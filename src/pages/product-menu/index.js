@@ -7,7 +7,7 @@ import MiniFooter from '../../components/mini-footer';
 import CardProduct from '../../components/card-product';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ProductMenu = () => {
   const [dataMenuProduct, setDataMenuProduct] = useState([]);

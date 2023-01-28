@@ -39,12 +39,8 @@ const HeaderResponsive = ({ headerShown, title }) => {
 
   return (
     <>
-      <Navbar
-        className='navbar-responsive container shadow-sm'
-        bg='white'
-        expand='lg'
-      >
-        <Container fluid>
+      <Navbar className='navbar-responsive container bg-white' expand='lg'>
+        <Container>
           <div className='header-content-1'>
             <Link className='link-dark text-decoration-none' to='/'>
               <img
