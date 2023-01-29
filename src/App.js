@@ -11,6 +11,7 @@ import Login from './pages/login/index';
 import ForgotPassword from './pages/forgot-password/index';
 import Profile from './pages/profile/index';
 import Chat from './pages/chat/index';
+import AdminAddNewProduct from './pages/admin-new-product/index';
 import NoMatch from './pages/404/index';
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='forgotpassword' element={<ForgotPassword />} />
         <Route path='profile' element={<Profile />} />
         <Route path='chat' element={<Chat />} />
+        <Route path='adminaddnewproduct' element={<AdminAddNewProduct />} />
         <Route path='*' element={<NoMatch />} />
       </Routes>
     </BrowserRouter>
